@@ -11,6 +11,7 @@ const Day = ({ onClick }) => {
       <img
         className="border"
         style={{ width: 50, height: 50 }}
+        // Should be dynamic
         src={`http://openweathermap.org/img/wn/${defaultWeatherIcon}@2x.png`}
         onClick={onClick}
       />
@@ -18,7 +19,7 @@ const Day = ({ onClick }) => {
         {`25F / 45F`}
       </div>
     </div>
-  )
+  );
 };
 
 const FiveDayForecast = () => {
